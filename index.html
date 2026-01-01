@@ -263,19 +263,22 @@
 <body class="smooth-scroll">
 
     <!-- Navigation -->
-    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm transition-all duration-300">
+    <!-- UPDATED: Gradient changed to #2B2B2B -> Black for premium look -->
+    <nav class="bg-gradient-to-b from-[#2B2B2B] to-black sticky top-0 z-50 border-b border-white/10 shadow-lg transition-all duration-300">
         <div class="max-w-6xl mx-auto px-4 py-3 md:py-4 flex justify-center items-center relative">
             
             <!-- Desktop Menu (Positioned Absolute Left) -->
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-[#6F6F6F] absolute left-4">
-                <a href="#science" class="hover:text-[#D2532A] transition-colors">The Science</a>
-                <a href="#benefits" class="hover:text-[#D2532A] transition-colors">Benefits</a>
-                <a href="#reviews" class="hover:text-[#D2532A] transition-colors">Reviews</a>
+            <!-- UPDATED: Text color changed to light gray/white for contrast -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300 absolute left-4">
+                <a href="#science" class="hover:text-white transition-colors duration-300">The Science</a>
+                <a href="#benefits" class="hover:text-white transition-colors duration-300">Benefits</a>
+                <a href="#reviews" class="hover:text-white transition-colors duration-300">Reviews</a>
             </div>
 
             <!-- Logo (Centered) -->
             <a href="#" class="flex-shrink-0 z-10">
-                <img src="images/logo.webp" alt="Vidalyn Logo" class="h-8 md:h-10 w-auto">
+                <!-- UPDATED: Added 'brightness-0 invert' to make logo white -->
+                <img src="images/logo.webp" alt="Vidalyn Logo" class="h-8 md:h-10 w-auto brightness-0 invert filter">
             </a>
             
             <!-- Button REMOVED as requested -->
