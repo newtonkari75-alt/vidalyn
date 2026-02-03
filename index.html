@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16981951119"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-16981951119');
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "vbg2ijsby2");
     </script>
 
     <!-- Performance & Preload -->
@@ -17,18 +16,15 @@
     <link rel="preconnect" href="https://flagcdn.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     
-    <!-- Tracking Script -->
-    <script src="https://cdn.rartcloud.com/code/8300-4a0176bb-1e48-4042-be64-48ffca81a4d6"></script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#F4F7FA">
+    <meta name="theme-color" content="#1A1A1A">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <!-- SEO -->
     <title>Vidalyn | Premium 0% THC CBD Isolate for Europe</title>
-    <meta name="description" content="Discover Vidalyn: The verified daily isolated CBD supplement for metabolic balance and anxiety relief. 0% THC.">
+    <meta name="description" content="Discover Vidalyn: The verified daily isolated CBD supplement for metabolic balance and emotional calm. 0% THC.">
     <link rel="canonical" href="https://vidalyn.vercel.app/">
 
     <!-- Scripts & Styles -->
@@ -75,25 +71,13 @@
         .premium-card {
             background: white;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            border: 1px solid rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.05);
         }
         
         .premium-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.05);
             border-color: #D2532A;
-        }
-
-        .lang-btn {
-            transition: all 0.3s ease;
-            filter: grayscale(100%);
-            opacity: 0.6;
-        }
-        .lang-btn.active {
-            filter: grayscale(0%);
-            opacity: 1;
-            transform: scale(1.1);
-            box-shadow: 0 0 0 2px #D2532A;
         }
 
         .cta-button {
@@ -105,6 +89,11 @@
             transform: scale(1.02);
             box-shadow: 0 15px 30px -5px rgba(210, 83, 42, 0.5);
         }
+
+        /* Modal Scroll Styling */
+        #modal-body::-webkit-scrollbar { width: 6px; }
+        #modal-body::-webkit-scrollbar-track { background: #f1f1f1; }
+        #modal-body::-webkit-scrollbar-thumb { background: #D2532A; border-radius: 10px; }
     </style>
 </head>
 <body class="bg-brand-surface text-brand-dark flex flex-col min-h-screen font-sans">
@@ -116,154 +105,138 @@
                 <img src="images/logo.webp" alt="Vidalyn" class="h-8 w-auto brightness-0 invert" onerror="this.src='https://placehold.co/150x40/222/fff?text=VIDALYN'">
             </div>
             <div class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-white/70">
+                <a href="#countries" class="hover:text-brand-primary transition-colors">Order Now</a>
                 <span class="text-brand-success flex items-center gap-2">
                     <span class="w-2 h-2 bg-brand-success rounded-full animate-pulse"></span> 
-                    Laboratório Verificado
+                    Lab Verified
                 </span>
             </div>
         </div>
     </nav>
 
     <main class="flex-grow">
-        <!-- Hero Section -->
-        <header class="relative pt-12 pb-24 overflow-hidden">
+        <!-- 1. Hero Section -->
+        <header class="relative pt-12 pb-20 overflow-hidden">
             <div class="absolute inset-0 hero-glow -z-10"></div>
             
             <div class="max-w-5xl mx-auto px-6 text-center">
-                <!-- Seletor de Idioma -->
-                <div class="inline-flex items-center bg-white/60 backdrop-blur shadow-sm rounded-full p-1.5 gap-2 mb-12 border border-black/5">
-                    <button onclick="changeLanguage('en', this)" class="lang-btn active w-8 h-8 rounded-full overflow-hidden" title="English">
-                        <img src="https://flagcdn.com/w80/gb.png" class="w-full h-full object-cover" alt="EN">
-                    </button>
-                    <button onclick="changeLanguage('fi', this)" class="lang-btn w-8 h-8 rounded-full overflow-hidden" title="Finnish">
-                        <img src="https://flagcdn.com/w80/fi.png" class="w-full h-full object-cover" alt="FI">
-                    </button>
-                    <button onclick="changeLanguage('dk', this)" class="lang-btn w-8 h-8 rounded-full overflow-hidden" title="Danish">
-                        <img src="https://flagcdn.com/w80/dk.png" class="w-full h-full object-cover" alt="DK">
-                    </button>
-                    <button onclick="changeLanguage('se', this)" class="lang-btn w-8 h-8 rounded-full overflow-hidden" title="Swedish">
-                        <img src="https://flagcdn.com/w80/se.png" class="w-full h-full object-cover" alt="SE">
-                    </button>
-                    <button onclick="changeLanguage('fr', this)" class="lang-btn w-8 h-8 rounded-full overflow-hidden" title="French">
-                        <img src="https://flagcdn.com/w80/fr.png" class="w-full h-full object-cover" alt="FR">
-                    </button>
-                </div>
-
-                <!-- Badges de Confiança -->
-                <div class="flex flex-wrap justify-center gap-4 mb-10">
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
                     <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100">
                         <i class="fas fa-check-circle text-brand-success"></i>
-                        <span class="text-xs font-bold text-gray-600" data-i18n="badge_guarantee">30-Day Guarantee</span>
+                        <span class="text-[10px] md:text-xs font-bold text-gray-600 uppercase">30-Day Guarantee</span>
                     </div>
                     <div class="flex items-center gap-2 bg-brand-primary/5 px-4 py-2 rounded-full border border-brand-primary/20">
                         <i class="fas fa-certificate text-brand-primary"></i>
-                        <span class="text-xs font-extrabold text-brand-primary" data-i18n="badge_discount">50% DISCOUNT TODAY</span>
+                        <span class="text-[10px] md:text-xs font-extrabold text-brand-primary uppercase tracking-wider">50% DISCOUNT TODAY</span>
                     </div>
                 </div>
 
-                <h1 class="font-serif text-5xl md:text-7xl font-bold mb-8 leading-[1.1] tracking-tight">
-                    <span data-i18n="headline_1">Less Hype.</span><br>
-                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-secondary to-brand-primary" data-i18n="headline_2">More</span> 
-                    <span class="italic font-medium" data-i18n="headline_3">Balance.</span>
+                <h1 class="font-serif text-4xl md:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
+                    Less Hype.<br>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-secondary to-brand-primary">More</span> 
+                    <span class="italic font-medium">Balance.</span>
                 </h1>
                 
-                <p class="text-xl text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed" data-i18n="subhead">
+                <p class="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed">
                     The daily isolated CBD support for metabolic steadiness and emotional calm. Certified 0% THC.
                 </p>
 
-                <!-- Visual do Produto -->
-                <div class="relative w-full max-w-sm mx-auto mb-16 group">
-                    <div class="absolute inset-0 bg-brand-primary/10 blur-[100px] rounded-full -z-10 group-hover:bg-brand-primary/20 transition-all duration-1000"></div>
-                    <img src="images/hero-product.webp" alt="Vidalyn CBD" class="w-full h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)] transition-transform duration-1000 group-hover:scale-105" onerror="this.src='https://placehold.co/500x700/fff/999?text=Vidalyn+Premium'">
+                <div class="relative w-full max-w-[280px] md:max-w-sm mx-auto mb-10 group">
+                    <div class="absolute inset-0 bg-brand-primary/10 blur-[80px] rounded-full -z-10 group-hover:bg-brand-primary/20 transition-all duration-1000"></div>
+                    <img src="images/hero-product.webp" alt="Vidalyn CBD" class="w-full h-auto drop-shadow-[0_25px_25px_rgba(0,0,0,0.12)] transition-transform duration-1000 group-hover:scale-105" onerror="this.src='https://placehold.co/500x700/fff/999?text=Vidalyn+Premium'">
                 </div>
 
-                <!-- Chamada para Ação (CTA) -->
-                <div class="flex flex-col items-center gap-6 mb-24">
-                    <a href="#countries" class="cta-button w-full max-w-lg text-white font-bold py-5 px-10 rounded-2xl text-lg shadow-2xl">
-                        <span data-i18n="cta_main">Continue To Local Offer — 50% Off</span>
+                <div class="flex flex-col items-center gap-4 mb-12">
+                    <a href="#countries" class="cta-button w-full max-w-md text-white font-bold py-4 px-8 rounded-xl text-md md:text-lg shadow-xl uppercase tracking-wider">
+                        Continue To Local Offer
                     </a>
-                    <div class="flex flex-wrap justify-center items-center gap-8 opacity-60">
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-truck-fast"></i>
-                            <span class="text-xs font-bold uppercase tracking-widest">Express Shipping</span>
+                    <div class="flex flex-wrap justify-center items-center gap-6 opacity-60">
+                        <div class="flex items-center gap-1.5">
+                            <i class="fas fa-truck-fast text-[10px]"></i>
+                            <span class="text-[9px] font-bold uppercase tracking-widest">Express Shipping</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-shield-halved"></i>
-                            <span class="text-xs font-bold uppercase tracking-widest">Secure Checkout</span>
+                        <div class="flex items-center gap-1.5">
+                            <i class="fas fa-shield-halved text-[10px]"></i>
+                            <span class="text-[9px] font-bold uppercase tracking-widest">Secure Checkout</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Seção de Benefícios Premium -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-                    <div class="premium-card p-8 rounded-3xl">
-                        <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6">
-                            <i class="fas fa-dna text-2xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold mb-3" data-i18n="benefit_1_title">Metabolic Support</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed" data-i18n="benefit_1_desc">Precisely isolated to assist your body's natural balance without interference.</p>
-                    </div>
-                    <div class="premium-card p-8 rounded-3xl">
-                        <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6">
-                            <i class="fas fa-leaf text-2xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold mb-3" data-i18n="benefit_2_title">Purity Guaranteed</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed" data-i18n="benefit_2_desc">0% THC content. Non-psychoactive, vegan-friendly, and lab-tested for safety.</p>
-                    </div>
-                    <div class="premium-card p-8 rounded-3xl">
-                        <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center text-brand-primary mb-6">
-                            <i class="fas fa-clock text-2xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold mb-3" data-i18n="benefit_4_title">Daily Efficiency</h3>
-                        <p class="text-gray-500 text-sm leading-relaxed" data-i18n="benefit_4_desc">One capsule, once a day. Designed for high-performance individuals who value time.</p>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- Seção de Seleção de País -->
-        <section id="countries" class="py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="font-serif text-4xl font-bold mb-4" data-i18n="select_country_title">Available Regions</h2>
-                    <p class="text-gray-400 max-w-lg mx-auto" data-i18n="select_country_desc">We currently offer localized express shipping and dedicated support to these territories.</p>
+        <!-- 2. Country Selection (Mover para Segunda Secção) -->
+        <section id="countries" class="py-16 md:py-24 bg-white border-t border-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12 md:mb-16">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4">Available Regions</h2>
+                    <p class="text-gray-400 text-sm md:text-base max-w-lg mx-auto">Select your country to view localized offers and express delivery details.</p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                <!-- Grid: 2 Colunas Mobile / 2 Colunas SM / 3 Colunas LG -->
+                <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 mb-16">
                     <template id="country-card-template">
-                        <a href="#" class="premium-card group p-10 rounded-[2rem] flex flex-col items-center text-center">
-                            <div class="w-24 h-24 rounded-full overflow-hidden mb-6 border-8 border-brand-surface shadow-inner group-hover:scale-110 transition-transform duration-500">
+                        <a href="#" class="premium-card group p-5 md:p-10 rounded-2xl md:rounded-[2rem] flex flex-col items-center text-center">
+                            <div class="w-14 h-14 md:w-24 md:h-24 rounded-full overflow-hidden mb-3 md:mb-6 border-4 md:border-8 border-brand-surface shadow-inner group-hover:scale-105 transition-transform duration-500">
                                 <img src="" class="w-full h-full object-cover" alt="Flag">
                             </div>
-                            <h3 class="text-2xl font-bold mb-2 name"></h3>
-                            <div class="flex items-center gap-2 mb-8">
-                                <span class="w-2 h-2 bg-brand-success rounded-full"></span>
-                                <span class="text-[10px] font-extrabold uppercase tracking-widest text-brand-success" data-i18n="stock_status">Active & In Stock</span>
+                            <h3 class="text-sm md:text-2xl font-bold mb-1 md:mb-2 name"></h3>
+                            <div class="hidden md:flex items-center gap-2 mb-6">
+                                <span class="w-1.5 h-1.5 bg-brand-success rounded-full"></span>
+                                <span class="text-[9px] font-extrabold uppercase tracking-widest text-brand-success">In Stock</span>
                             </div>
-                            <div class="w-full py-4 bg-brand-dark text-white rounded-xl font-bold text-sm group-hover:bg-brand-primary transition-colors duration-300" data-i18n="btn_select">
-                                Access Local Store
+                            <div class="w-full py-2.5 md:py-4 bg-brand-dark text-white rounded-lg md:rounded-xl font-bold text-[10px] md:text-sm group-hover:bg-brand-primary transition-colors duration-300 uppercase tracking-tighter md:tracking-normal">
+                                Access Store
                             </div>
                         </a>
                     </template>
                     
                     <div id="primary-countries" class="contents">
-                        <!-- Gerado por JS -->
+                        <!-- Injetado via JS -->
                     </div>
                 </div>
 
-                <!-- Selos de Certificação -->
-                <div class="border-t border-gray-100 pt-16 flex flex-wrap justify-center items-center gap-12 grayscale opacity-40">
-                    <div class="flex flex-col items-center gap-2">
-                        <i class="fas fa-vial text-3xl"></i>
-                        <span class="text-[10px] font-bold uppercase">ISO Certified Lab</span>
+                <!-- Selos Minimalistas -->
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 grayscale opacity-30 pt-8 border-t border-gray-50">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-vial text-xl"></i>
+                        <span class="text-[8px] md:text-[10px] font-bold uppercase tracking-widest">ISO Certified</span>
                     </div>
-                    <div class="flex flex-col items-center gap-2">
-                        <i class="fas fa-seedling text-3xl"></i>
-                        <span class="text-[10px] font-bold uppercase">100% Vegan</span>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-seedling text-xl"></i>
+                        <span class="text-[8px] md:text-[10px] font-bold uppercase tracking-widest">100% Vegan</span>
                     </div>
-                    <div class="flex flex-col items-center gap-2">
-                        <i class="fas fa-earth-europe text-3xl"></i>
-                        <span class="text-[10px] font-bold uppercase">EU Compliance</span>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-earth-europe text-xl"></i>
+                        <span class="text-[8px] md:text-[10px] font-bold uppercase tracking-widest">EU Compliance</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Benefits Section -->
+        <section class="py-20 bg-brand-surface">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                    <div class="premium-card p-8 rounded-3xl border-none shadow-sm">
+                        <div class="w-12 h-12 bg-brand-primary/10 rounded-xl flex items-center justify-center text-brand-primary mb-6">
+                            <i class="fas fa-dna text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">Metabolic Support</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Precisely isolated to assist your body's natural balance without interference.</p>
+                    </div>
+                    <div class="premium-card p-8 rounded-3xl border-none shadow-sm">
+                        <div class="w-12 h-12 bg-brand-primary/10 rounded-xl flex items-center justify-center text-brand-primary mb-6">
+                            <i class="fas fa-leaf text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">Purity Guaranteed</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">0% THC content. Non-psychoactive, vegan-friendly, and lab-tested for safety.</p>
+                    </div>
+                    <div class="premium-card p-8 rounded-3xl border-none shadow-sm">
+                        <div class="w-12 h-12 bg-brand-primary/10 rounded-xl flex items-center justify-center text-brand-primary mb-6">
+                            <i class="fas fa-clock text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-3">Daily Efficiency</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">One capsule, once a day. Designed for individuals who value clarity and time.</p>
                     </div>
                 </div>
             </div>
@@ -271,190 +244,48 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-brand-dark text-white/40 py-20 border-t border-white/5">
+    <footer class="bg-brand-dark text-white/40 py-16 md:py-20 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <img src="images/logo.webp" alt="Vidalyn" class="h-6 mx-auto mb-12 brightness-0 invert opacity-30">
+            <img src="images/logo.webp" alt="Vidalyn" class="h-6 mx-auto mb-10 brightness-0 invert opacity-30">
             
-            <div class="flex flex-wrap justify-center gap-10 mb-12">
-                <button onclick="openModal('privacy')" class="text-xs font-bold uppercase tracking-widest hover:text-white transition-colors" data-i18n="privacy">Privacy Policy</button>
-                <button onclick="openModal('terms')" class="text-xs font-bold uppercase tracking-widest hover:text-white transition-colors" data-i18n="terms">Terms of Service</button>
-                <button onclick="openModal('contact')" class="text-xs font-bold uppercase tracking-widest hover:text-white transition-colors" data-i18n="contact">Contact Support</button>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-10 mb-12">
+                <button onclick="window.scrollTo(0,0)" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Home</button>
+                <button onclick="openModal('privacy')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Privacy</button>
+                <button onclick="openModal('terms')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Terms</button>
+                <button onclick="openModal('return')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Returns</button>
+                <button onclick="openModal('shipping')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Shipping</button>
+                <button onclick="openModal('impressum')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Impressum</button>
+                <button onclick="openModal('contact')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Contact</button>
             </div>
 
             <div class="max-w-3xl mx-auto space-y-4">
-                <p class="text-[10px] leading-relaxed" data-i18n="disclaimer">
-                    DISCLAIMER: Products sold on this website are not for use by or sale to persons under the age of 18. These products should be used only as directed on the label. It should not be used if you are pregnant or nursing. Consult with a physician before use if you have a serious medical condition or use prescription medications.
+                <p class="text-[9px] leading-relaxed opacity-60">
+                    DISCLAIMER: Products sold on this website are not for use by persons under the age of 18. Food supplements should not replace a varied diet. Consult with a physician before use if you are pregnant or nursing.
                 </p>
-                <p class="text-[10px]">&copy; 2026 Vidalyn Global Group Ltd. All rights reserved.</p>
+                <p class="text-[9px] tracking-widest uppercase">&copy; 2026 Somerville E-commerce Limited (Vidalyn)</p>
             </div>
         </div>
     </footer>
 
-    <!-- Modal Legal -->
+    <!-- Modal System -->
     <div id="modal-container" class="fixed inset-0 z-[100] hidden">
         <div id="modal-overlay" class="absolute inset-0 bg-brand-dark/95 backdrop-blur-md opacity-0 transition-opacity duration-300" onclick="closeModal()"></div>
         <div class="absolute inset-0 flex items-center justify-center p-6 pointer-events-none">
-            <div id="modal-wrapper" class="bg-white w-full max-w-2xl max-h-[85vh] rounded-[2.5rem] shadow-2xl flex flex-col pointer-events-auto transform translate-y-12 opacity-0 transition-all duration-300">
-                <div class="flex justify-between items-center p-8 border-b border-gray-50">
-                    <h3 id="modal-title" class="text-2xl font-serif font-bold text-brand-dark"></h3>
-                    <button onclick="closeModal()" class="w-12 h-12 rounded-full bg-brand-surface flex items-center justify-center hover:bg-gray-200 transition-colors">
+            <div id="modal-wrapper" class="bg-white w-full max-w-3xl max-h-[85vh] rounded-[2rem] md:rounded-[2.5rem] shadow-2xl flex flex-col pointer-events-auto transform translate-y-12 opacity-0 transition-all duration-300">
+                <div class="flex justify-between items-center p-6 md:p-8 border-b border-gray-50">
+                    <h3 id="modal-title" class="text-xl md:text-2xl font-serif font-bold text-brand-dark"></h3>
+                    <button onclick="closeModal()" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-surface flex items-center justify-center hover:bg-gray-200 transition-colors">
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
-                <div id="modal-body" class="p-10 overflow-y-auto text-gray-500 text-sm leading-relaxed space-y-4"></div>
+                <div id="modal-body" class="p-6 md:p-10 overflow-y-auto text-gray-500 text-sm leading-relaxed space-y-6">
+                    <!-- Content injected here -->
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        // Configuração de Traduções
-        const translations = {
-            en: {
-                badge_guarantee: "30-Day Money-Back Guarantee",
-                badge_discount: "EXCLUSIVE 50% DISCOUNT TODAY",
-                headline_1: "Less Hype.",
-                headline_2: "More",
-                headline_3: "Balance.",
-                subhead: "The daily isolated CBD support for metabolic steadiness and emotional calm. Certified 0% THC.",
-                cta_main: "Continue To Local Offer — 50% OFF",
-                guarantee_text: "Full 30-Day Money-Back Guarantee Included",
-                benefit_1_title: "Metabolic Support",
-                benefit_1_desc: "Precisely isolated to assist your body's natural balance without interference.",
-                benefit_2_title: "Purity Guaranteed",
-                benefit_2_desc: "0% THC content. Non-psychoactive, vegan-friendly, and lab-tested.",
-                benefit_4_title: "Daily Efficiency",
-                benefit_4_desc: "One capsule, once a day. Designed for high-performance individuals.",
-                select_country_title: "Available Regions",
-                select_country_desc: "We currently offer localized express shipping and dedicated support to these territories.",
-                stock_status: "Active & In Stock",
-                btn_select: "Access Local Store",
-                privacy: "Privacy Policy",
-                terms: "Terms of Service",
-                contact: "Contact Support",
-                disclaimer: "DISCLAIMER: Products sold on this website are not for use by persons under 18. Food supplements should not replace a varied diet."
-            },
-            fi: {
-                badge_guarantee: "30 päivän tyytyväisyystakuu",
-                badge_discount: "YKSINOIKEUDELLA 50% ALENNUS TÄNÄÄN",
-                headline_1: "Vähemmän hypeä.",
-                headline_2: "Enemmän",
-                headline_3: "Tasapainoa.",
-                subhead: "Päivittäinen CBD-isolaatti aineenvaihdunnan tasapainoon ja mielenrauhaan. Sertifioitu 0% THC.",
-                cta_main: "Jatka paikalliseen tarjoukseen — 50% ALENNUS",
-                guarantee_text: "Sisältää täyden 30 päivän palautusoikeuden",
-                benefit_1_title: "Aineenvaihdunnan tuki",
-                benefit_1_desc: "Tarkasti eristetty tukemaan kehosi luonnollista tasapainoa.",
-                benefit_2_title: "Taattu puhtaus",
-                benefit_2_desc: "0% THC. Ei-psykoaktiivinen, vegaaninen ja laboratoriotestattu.",
-                benefit_4_title: "Päivittäinen teho",
-                benefit_4_desc: "Yksi kapseli kerran päivässä. Suunniteltu tavoitteellisille ihmisille.",
-                select_country_title: "Saatavilla olevat alueet",
-                select_country_desc: "Tarjoamme paikallisen pikatoimituksen ja tuen näille alueille.",
-                stock_status: "Aktiivinen ja varastossa",
-                btn_select: "Siirry kauppaan",
-                privacy: "Tietosuojaseloste",
-                terms: "Käyttöehdot",
-                contact: "Ota yhteyttä tukeen",
-                disclaimer: "HUOMAUTUS: Tuotteita ei ole tarkoitettu alle 18-vuotiaille. Ravintolisät eivät korvaa monipuolista ruokavaliota."
-            },
-            dk: {
-                badge_guarantee: "30-dages garanti",
-                badge_discount: "EKSKLUSIV 50% RABAT I DAG",
-                headline_1: "Mindre hype.",
-                headline_2: "Mere",
-                headline_3: "Balance.",
-                subhead: "Daglig isoleret CBD-støtte til metabolisk stabilitet og indre ro. Certificeret 0% THC.",
-                cta_main: "Fortsæt til lokalt tilbud — 50% RABAT",
-                guarantee_text: "Fuld 30-dages pengene-tilbage-garanti inkluderet",
-                benefit_1_title: "Metabolisk støtte",
-                benefit_1_desc: "Præcist isoleret for at understøtte din krops naturlige balance.",
-                benefit_2_title: "Garanteret renhed",
-                benefit_2_desc: "0% THC-indhold. Ikke-psykoaktiv og laboratorietestet.",
-                benefit_4_title: "Daglig effektivitet",
-                benefit_4_desc: "Én kapsel, én gang dagligt. Skabt til højtpræsterende personer.",
-                select_country_title: "Tilgængelige regioner",
-                select_country_desc: "Vi tilbyder i øjeblikket ekspreslevering og dedikeret support til disse områder.",
-                stock_status: "Aktiv og på lager",
-                btn_select: "Gå til butik",
-                privacy: "Privatlivspolitik",
-                terms: "Handelsbetingelser",
-                contact: "Kontakt support",
-                disclaimer: "ANSVARSFRASKRIVELSE: Produkter må ikke bruges af personer under 18 år."
-            },
-            se: {
-                badge_guarantee: "30 dagars garanti",
-                badge_discount: "EXKLUSIV 50% RABATT IDAG",
-                headline_1: "Mindre hype.",
-                headline_2: "Mer",
-                headline_3: "Balans.",
-                subhead: "Dagligt stöd med isolerat CBD för metabolisk stabilitet och inre lugn. Certifierad 0% THC.",
-                cta_main: "Gå till lokalt erbjudande — 50% RABATT",
-                guarantee_text: "Full 30 dagars pengarna-tillbaka-garanti ingår",
-                benefit_1_title: "Metaboliskt stöd",
-                benefit_1_desc: "Exakt isolerad för att stödja kroppens naturliga balans.",
-                benefit_2_title: "Garanterad renhed",
-                benefit_2_desc: "0% THC-innehåll. Icke-psykoaktiv och laboratorietestad.",
-                benefit_4_title: "Daglig effektivitet",
-                benefit_4_desc: "En kapsel, en gång om dagen. Designad för högpresterande individer.",
-                select_country_title: "Tillgängliga regioner",
-                select_country_desc: "Vi erbjuder för närvarande expressfrakt och dedikerad support till dessa områden.",
-                stock_status: "Aktiv och i lager",
-                btn_select: "Gå till butiken",
-                privacy: "Integritetspolicy",
-                terms: "Användarvillkor",
-                contact: "Kontakta support",
-                disclaimer: "ANSVARSFRISKRIVNING: Produkterna är inte avsedda för personer under 18 år."
-            },
-            fr: {
-                badge_guarantee: "Garantie de 30 jours",
-                badge_discount: "50% DE RÉDUCTION EXCLUSIVE AUJOURD'HUI",
-                headline_1: "Moins de Hype.",
-                headline_2: "Plus de",
-                headline_3: "Équilibre.",
-                subhead: "Le soutien quotidien au CBD isolé pour la stabilité métabolique et le calme émotionnel. Certifié 0% THC.",
-                cta_main: "Continuer vers l'offre locale — 50% de réduction",
-                guarantee_text: "Garantie complète de remboursement de 30 jours incluse",
-                benefit_1_title: "Soutien Métabolique",
-                benefit_1_desc: "Précisément isolé pour aider à l'équilibre naturel de votre corps.",
-                benefit_2_title: "Pureté Garantie",
-                benefit_2_desc: "0% de THC. Non psychoactif, vegan et testé en laboratoire.",
-                benefit_4_title: "Efficacité Quotidienne",
-                benefit_4_desc: "Une capsule, une fois par jour. Conçu pour la performance.",
-                select_country_title: "Régions Disponibles",
-                select_country_desc: "Nous proposons actuellement une livraison express et un support dédié dans ces territoires.",
-                stock_status: "Actif et en stock",
-                btn_select: "Accéder à la boutique",
-                privacy: "Politique de confidentialité",
-                terms: "Conditions d'utilisation",
-                contact: "Contacter le support",
-                disclaimer: "AVERTISSEMENT: Les produits ne sont pas destinés aux personnes de moins de 18 ans."
-            },
-            de: {
-                badge_guarantee: "30-Tage-Garantie",
-                badge_discount: "EXKLUSIV 50% RABATT HEUTE",
-                headline_1: "Weniger Hype.",
-                headline_2: "Mehr",
-                headline_3: "Balance.",
-                subhead: "Die tägliche CBD-Isolat-Unterstützung für metabolische Stabilität und emotionale Ruhe. Zertifiziert 0% THC.",
-                cta_main: "Weiter zum lokalen Angebot — 50% RABATT",
-                guarantee_text: "Inklusive 30-Tage-Geld-zurück-Garantie",
-                benefit_1_title: "Metabolische Hilfe",
-                benefit_1_desc: "Präzise isoliert, um das natürliche Gleichgewicht Ihres Körpers zu unterstützen.",
-                benefit_2_title: "Garantierte Reinheit",
-                benefit_2_desc: "0% THC-Gehalt. Nicht psychoaktiv, vegan und laborgeprüft.",
-                benefit_4_title: "Tägliche Effizienz",
-                benefit_4_desc: "Eine Kapsel, einmal täglich. Entwickelt für leistungsorientierte Menschen.",
-                select_country_title: "Verfügbare Regionen",
-                select_country_desc: "Wir bieten derzeit lokalen Expressversand und engagierten Support in diesen Regionen an.",
-                stock_status: "Aktiv & Vorrätig",
-                btn_select: "Zum Shop",
-                privacy: "Datenschutzerklärung",
-                terms: "Nutzungsbedingungen",
-                contact: "Support kontaktieren",
-                disclaimer: "HAFTUNGSAUSSCHLUSS: Die Produkte sind nicht für Personen unter 18 Jahren bestimmt."
-            }
-        };
-
         const countries = [
             { id: 'gb', name: 'United Kingdom', flag: 'gb', url: 'https://www.fasttrack37.com/PM7HK3TH/2RRT7M7B/' },
             { id: 'se', name: 'Sweden', flag: 'se', url: 'https://www.fasttrack37.com/PM7HK3TH/2RRMN48W/' },
@@ -464,45 +295,53 @@
             { id: 'fi', name: 'Finland', flag: 'fi', url: 'https://www.fasttrack37.com/PM7HK3TH/2RRQFTQ4/' }
         ];
 
+        const legalContent = {
+            privacy: {
+                title: "Privacy Policy",
+                body: `<p class="font-bold">Privacy Policy of Somerville E-commerce Limited (Vidalyn)</p><p>We respect the privacy of all users and ensure personal info is treated confidentially. We use your info to process orders and only with consent for promotions.</p><h4 class="font-bold">SSL Security</h4><p>Data is transmitted encrypted via SSL. info@get-vidalyn.com</p>`
+            },
+            return: {
+                title: "Return Policy",
+                body: `<h4 class="font-bold">14-Day Guarantee</h4><p>Returns accepted within 14 days of receipt. <strong>The seal of the bottle must not be broken.</strong> Contact us at info@get-vidalyn.com for return instructions.</p>`
+            },
+            shipping: {
+                title: "Shipping Policy",
+                body: `<h4>Delivery Times</h4><p>Orders typically arrive within 3-5 business days via PostNL. Tracking links are provided via email upon shipment.</p>`
+            },
+            impressum: {
+                title: "Impressum",
+                body: `<p>Somerville E-commerce Limited (Vidalyn)<br>2C GRANGEGORMAN LOWER, Dublin 7, Ireland<br>Chamber: IE680694 | Phone: +31850805741</p>`
+            },
+            terms: {
+                title: "Terms and Conditions",
+                body: `<p>Applicable law: Dutch law / European Distance Selling Directive. 14-day withdrawal right applies to unopened products.</p>`
+            },
+            contact: {
+                title: "Contact Support",
+                body: `<div class="bg-brand-surface p-6 rounded-2xl border border-brand-primary/10"><p class="font-bold">Email Support</p><p class="text-brand-primary font-bold">info@get-vidalyn.com</p><p class="mt-4 font-bold">Office</p><p>Dublin, Ireland</p></div>`
+            }
+        };
+
         function initCountries() {
             const container = document.getElementById('primary-countries');
             const template = document.getElementById('country-card-template');
-            
             countries.forEach(c => {
                 const clone = template.content.cloneNode(true);
-                clone.querySelector('a').href = c.url; // Link dinâmico
+                clone.querySelector('a').href = c.url;
                 clone.querySelector('img').src = `https://flagcdn.com/w160/${c.flag}.png`;
                 clone.querySelector('.name').innerText = c.name;
-                clone.querySelector('.name').setAttribute('data-i18n', `country_${c.id}`);
                 container.appendChild(clone);
             });
         }
 
-        function changeLanguage(lang, btn) {
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    el.innerText = translations[lang][key];
-                }
-            });
-            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-            if(btn) btn.classList.add('active');
-        }
-
         function openModal(type) {
-            const content = {
-                privacy: { title: "Privacy Policy", body: "<p>We utilize high-level encryption for all data processing. Your privacy is protected under GDPR and UK data laws.</p>" },
-                terms: { title: "Terms of Service", body: "<p>Vidalyn acts as a premium wellness supplement provider. By accessing our localized stores, you agree to our standard terms of trade.</p>" },
-                contact: { title: "Global Support", body: "<p>Email: <strong>support@vidalyn.co.uk</strong><br>Our dedicated team responds within 2-4 business hours.</p>" }
-            };
-            const c = content[type];
+            const c = legalContent[type];
+            if (!c) return;
             document.getElementById('modal-title').innerText = c.title;
             document.getElementById('modal-body').innerHTML = c.body;
-            
             const container = document.getElementById('modal-container');
             const wrapper = document.getElementById('modal-wrapper');
             const overlay = document.getElementById('modal-overlay');
-
             container.classList.remove('hidden');
             setTimeout(() => {
                 overlay.classList.replace('opacity-0', 'opacity-100');
