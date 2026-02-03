@@ -9,23 +9,93 @@
         })(window, document, "clarity", "script", "vbg2ijsby2");
     </script>
 
-    <!-- Performance & Preload -->
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://flagcdn.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    
+    <!-- METAS TÉCNICAS E PERFORMANCE -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#1A1A1A">
     <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="format-detection" content="telephone=no">
 
-    <!-- SEO -->
-    <title>Vidalyn | Premium 0% THC CBD Isolate for Europe</title>
-    <meta name="description" content="Discover Vidalyn: The verified daily isolated CBD supplement for metabolic balance and emotional calm. 0% THC.">
+    <!-- SEO PRIMARY TAGS -->
+    <title>Vidalyn | Premium 0% THC CBD Isolate - Official EU & UK Store</title>
+    <meta name="description" content="Restore your balance with Vidalyn. Premium 0% THC isolated CBD support for metabolic steadiness and emotional calm. Available in UK, SE, FR, DK, DE, and FI.">
+    <meta name="keywords" content="Vidalyn, CBD Isolate, 0% THC CBD, CBD UK, CBD Sweden, CBD France, CBD Denmark, CBD Germany, CBD Finland, Metabolic Balance, Premium CBD Capsules">
     <link rel="canonical" href="https://vidalyn.vercel.app/">
+    
+    <!-- GEO & LANGUAGE TARGETING (Hreflang) -->
+    <link rel="alternate" hreflang="en-GB" href="https://vidalyn.vercel.app/" />
+    <link rel="alternate" hreflang="sv-SE" href="https://vidalyn.vercel.app/" />
+    <link rel="alternate" hreflang="fr-FR" href="https://vidalyn.vercel.app/" />
+    <link rel="alternate" hreflang="da-DK" href="https://vidalyn.vercel.app/" />
+    <link rel="alternate" hreflang="de-DE" href="https://vidalyn.vercel.app/" />
+    <link rel="alternate" hreflang="fi-FI" href="https://vidalyn.vercel.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://vidalyn.vercel.app/" />
+
+    <!-- PERFORMANCE: PRECONNECT & PREFETCH -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://flagcdn.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://www.clarity.ms">
+
+    <!-- PRELOAD CRITICAL ASSETS -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" as="style">
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://vidalyn.vercel.app/">
+    <meta property="og:title" content="Vidalyn | Daily Metabolic & Emotional Balance">
+    <meta property="og:description" content="Certified 0% THC CBD isolate. Trusted daily support for clarity and calm. Available across Europe.">
+    <meta property="og:image" content="https://vidalyn.vercel.app/images/hero-product.webp">
+    <meta property="og:site_name" content="Vidalyn Global">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vidalyn | Premium CBD Isolate">
+    <meta name="twitter:description" content="Metabolic steadiness and emotional calm with 0% THC Vidalyn.">
+    <meta name="twitter:image" content="https://vidalyn.vercel.app/images/hero-product.webp">
+
+    <!-- JSON-LD STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://vidalyn.vercel.app/#website",
+          "url": "https://vidalyn.vercel.app/",
+          "name": "Vidalyn Official",
+          "description": "Premium CBD Isolate for metabolic and emotional balance.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Somerville E-commerce Limited",
+            "logo": "https://vidalyn.vercel.app/images/logo.webp"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Vidalyn Isolated CBD Complex",
+          "image": "https://vidalyn.vercel.app/images/hero-product.webp",
+          "description": "Daily isolated CBD support for metabolic steadiness and emotional calm. 0% THC, vegan capsules.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Vidalyn"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "offerCount": "6",
+            "lowPrice": "29.99",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "areaServed": ["GB", "SE", "FR", "DK", "DE", "FI"]
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Scripts & Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -90,7 +160,6 @@
             box-shadow: 0 15px 30px -5px rgba(210, 83, 42, 0.5);
         }
 
-        /* Modal Scroll Styling */
         #modal-body::-webkit-scrollbar { width: 6px; }
         #modal-body::-webkit-scrollbar-track { background: #f1f1f1; }
         #modal-body::-webkit-scrollbar-thumb { background: #D2532A; border-radius: 10px; }
@@ -116,18 +185,20 @@
 
     <main class="flex-grow">
         <!-- 1. Hero Section -->
-        <header class="relative pt-12 pb-20 overflow-hidden">
+        <header class="relative pt-10 pb-20 overflow-hidden">
             <div class="absolute inset-0 hero-glow -z-10"></div>
             
             <div class="max-w-5xl mx-auto px-6 text-center">
-                <div class="flex flex-wrap justify-center gap-4 mb-8">
-                    <div class="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100">
-                        <i class="fas fa-check-circle text-brand-success"></i>
-                        <span class="text-[10px] md:text-xs font-bold text-gray-600 uppercase">30-Day Guarantee</span>
+                
+                <!-- Selos/Badges - Ajustados para uma linha no mobile -->
+                <div class="flex justify-center items-center gap-2 mb-8 flex-nowrap overflow-hidden">
+                    <div class="flex items-center gap-1.5 bg-white px-2 py-1.5 md:px-4 md:py-2 rounded-full shadow-sm border border-gray-100 whitespace-nowrap">
+                        <i class="fas fa-check-circle text-brand-success text-[10px] md:text-xs"></i>
+                        <span class="text-[8px] md:text-xs font-bold text-gray-600 uppercase">30-Day Guarantee</span>
                     </div>
-                    <div class="flex items-center gap-2 bg-brand-primary/5 px-4 py-2 rounded-full border border-brand-primary/20">
-                        <i class="fas fa-certificate text-brand-primary"></i>
-                        <span class="text-[10px] md:text-xs font-extrabold text-brand-primary uppercase tracking-wider">50% DISCOUNT TODAY</span>
+                    <div class="flex items-center gap-1.5 bg-brand-primary/5 px-2 py-1.5 md:px-4 md:py-2 rounded-full border border-brand-primary/20 whitespace-nowrap">
+                        <i class="fas fa-certificate text-brand-primary text-[10px] md:text-xs"></i>
+                        <span class="text-[8px] md:text-xs font-extrabold text-brand-primary uppercase tracking-wider">50% DISCOUNT TODAY</span>
                     </div>
                 </div>
 
@@ -164,7 +235,7 @@
             </div>
         </header>
 
-        <!-- 2. Country Selection (Mover para Segunda Secção) -->
+        <!-- 2. Country Selection (MANTIDA COMO SEGUNDA SEÇÃO) -->
         <section id="countries" class="py-16 md:py-24 bg-white border-t border-gray-50">
             <div class="max-w-6xl mx-auto px-4 sm:px-6">
                 <div class="text-center mb-12 md:mb-16">
@@ -172,7 +243,7 @@
                     <p class="text-gray-400 text-sm md:text-base max-w-lg mx-auto">Select your country to view localized offers and express delivery details.</p>
                 </div>
 
-                <!-- Grid: 2 Colunas Mobile / 2 Colunas SM / 3 Colunas LG -->
+                <!-- Grid: 2 Colunas Mobile / Minimalista -->
                 <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 mb-16">
                     <template id="country-card-template">
                         <a href="#" class="premium-card group p-5 md:p-10 rounded-2xl md:rounded-[2rem] flex flex-col items-center text-center">
@@ -191,7 +262,7 @@
                     </template>
                     
                     <div id="primary-countries" class="contents">
-                        <!-- Injetado via JS -->
+                        <!-- Gerado via JS -->
                     </div>
                 </div>
 
@@ -248,7 +319,7 @@
         <div class="max-w-7xl mx-auto px-6 text-center">
             <img src="images/logo.webp" alt="Vidalyn" class="h-6 mx-auto mb-10 brightness-0 invert opacity-30">
             
-            <div class="flex flex-wrap justify-center gap-6 md:gap-10 mb-12">
+            <div class="flex flex-wrap justify-center gap-6 md:gap-10 mb-8">
                 <button onclick="window.scrollTo(0,0)" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Home</button>
                 <button onclick="openModal('privacy')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Privacy</button>
                 <button onclick="openModal('terms')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white transition-colors">Terms</button>
@@ -259,6 +330,7 @@
             </div>
 
             <div class="max-w-3xl mx-auto space-y-4">
+                <p class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/60 mb-4">Authorized Distributor</p>
                 <p class="text-[9px] leading-relaxed opacity-60">
                     DISCLAIMER: Products sold on this website are not for use by persons under the age of 18. Food supplements should not replace a varied diet. Consult with a physician before use if you are pregnant or nursing.
                 </p>
